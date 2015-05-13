@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8497AD411AFC142000484F8A /* VRShowNewsFromLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 8497AD401AFC142000484F8A /* VRShowNewsFromLink.m */; };
+		849ACC551AFE362D0025202D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 849ACC541AFE362D0025202D /* Reachability.m */; };
+		84A18A251AFAA54D0032F8B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A18A241AFAA54D0032F8B2 /* Foundation.framework */; };
+		84A18A271AFAA54D0032F8B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A18A261AFAA54D0032F8B2 /* CoreGraphics.framework */; };
+		84A18A291AFAA54D0032F8B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A18A281AFAA54D0032F8B2 /* UIKit.framework */; };
+		84A18A2F1AFAA54D0032F8B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84A18A2D1AFAA54D0032F8B2 /* InfoPlist.strings */; };
+		84A18A311AFAA54D0032F8B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A18A301AFAA54D0032F8B2 /* main.m */; };
+		84A18A351AFAA54D0032F8B2 /* VRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A18A341AFAA54D0032F8B2 /* VRAppDelegate.m */; };
+		84A18A381AFAA54D0032F8B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A18A361AFAA54D0032F8B2 /* Main.storyboard */; };
+		84A18A3B1AFAA54D0032F8B2 /* VRMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A18A3A1AFAA54D0032F8B2 /* VRMainViewController.m */; };
+		84A18A3D1AFAA54D0032F8B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A18A3C1AFAA54D0032F8B2 /* Images.xcassets */; };
+		84A18A441AFAA54D0032F8B2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A18A431AFAA54D0032F8B2 /* XCTest.framework */; };
+		84A18A451AFAA54D0032F8B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A18A241AFAA54D0032F8B2 /* Foundation.framework */; };
+		84A18A461AFAA54D0032F8B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A18A281AFAA54D0032F8B2 /* UIKit.framework */; };
+		84A18A4E1AFAA54D0032F8B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84A18A4C1AFAA54D0032F8B2 /* InfoPlist.strings */; };
+		84A18A501AFAA54D0032F8B2 /* rssReaderNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A18A4F1AFAA54D0032F8B2 /* rssReaderNewsTests.m */; };
+		84A18A5B1AFAA59B0032F8B2 /* VRNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A18A5A1AFAA59B0032F8B2 /* VRNetManager.m */; };
+		84A18A5E1AFAAEF60032F8B2 /* VRCellForFeedViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A18A5D1AFAAEF60032F8B2 /* VRCellForFeedViewCell.m */; };
+		84A18A671AFAB3D50032F8B2 /* Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A18A651AFAB3D50032F8B2 /* Placeholder.png */; };
+		84A18A681AFAB3D50032F8B2 /* Placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A18A661AFAB3D50032F8B2 /* Placeholder@2x.png */; };
+		84A18A6D1AFAB49B0032F8B2 /* VRDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A18A6C1AFAB49B0032F8B2 /* VRDetailViewController.m */; };
+		84A367891AFEB0170099957C /* 442717_photo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84A367881AFEB0170099957C /* 442717_photo.jpg */; };
+		84B941F21AFD5DF0003DEF1F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B941F11AFD5DF0003DEF1F /* SystemConfiguration.framework */; };
+		DF8EE16E700C8EDD870B8B67 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5421471F9F3A4517782777 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84A18A471AFAA54D0032F8B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A18A191AFAA54D0032F8B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84A18A201AFAA54D0032F8B2;
+			remoteInfo = rssReaderNews;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		159CC61780A5BCFBDE2EB60E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3AED13D0F0A6F8146B79EB47 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8497AD3F1AFC142000484F8A /* VRShowNewsFromLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRShowNewsFromLink.h; sourceTree = "<group>"; };
+		8497AD401AFC142000484F8A /* VRShowNewsFromLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRShowNewsFromLink.m; sourceTree = "<group>"; };
+		849ACC531AFE362D0025202D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		849ACC541AFE362D0025202D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		84A18A211AFAA54D0032F8B2 /* rssReaderNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rssReaderNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A18A241AFAA54D0032F8B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84A18A261AFAA54D0032F8B2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84A18A281AFAA54D0032F8B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84A18A2C1AFAA54D0032F8B2 /* rssReaderNews-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "rssReaderNews-Info.plist"; sourceTree = "<group>"; };
+		84A18A2E1AFAA54D0032F8B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84A18A301AFAA54D0032F8B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84A18A321AFAA54D0032F8B2 /* rssReaderNews-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "rssReaderNews-Prefix.pch"; sourceTree = "<group>"; };
+		84A18A331AFAA54D0032F8B2 /* VRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VRAppDelegate.h; sourceTree = "<group>"; };
+		84A18A341AFAA54D0032F8B2 /* VRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VRAppDelegate.m; sourceTree = "<group>"; };
+		84A18A371AFAA54D0032F8B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84A18A391AFAA54D0032F8B2 /* VRMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VRMainViewController.h; sourceTree = "<group>"; };
+		84A18A3A1AFAA54D0032F8B2 /* VRMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VRMainViewController.m; sourceTree = "<group>"; };
+		84A18A3C1AFAA54D0032F8B2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84A18A421AFAA54D0032F8B2 /* rssReaderNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rssReaderNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A18A431AFAA54D0032F8B2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		84A18A4B1AFAA54D0032F8B2 /* rssReaderNewsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "rssReaderNewsTests-Info.plist"; sourceTree = "<group>"; };
+		84A18A4D1AFAA54D0032F8B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84A18A4F1AFAA54D0032F8B2 /* rssReaderNewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rssReaderNewsTests.m; sourceTree = "<group>"; };
+		84A18A591AFAA59B0032F8B2 /* VRNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRNetManager.h; sourceTree = "<group>"; };
+		84A18A5A1AFAA59B0032F8B2 /* VRNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRNetManager.m; sourceTree = "<group>"; };
+		84A18A5C1AFAAEF60032F8B2 /* VRCellForFeedViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRCellForFeedViewCell.h; sourceTree = "<group>"; };
+		84A18A5D1AFAAEF60032F8B2 /* VRCellForFeedViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRCellForFeedViewCell.m; sourceTree = "<group>"; };
+		84A18A651AFAB3D50032F8B2 /* Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Placeholder.png; sourceTree = "<group>"; };
+		84A18A661AFAB3D50032F8B2 /* Placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Placeholder@2x.png"; sourceTree = "<group>"; };
+		84A18A6B1AFAB49B0032F8B2 /* VRDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VRDetailViewController.h; sourceTree = "<group>"; };
+		84A18A6C1AFAB49B0032F8B2 /* VRDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VRDetailViewController.m; sourceTree = "<group>"; };
+		84A367881AFEB0170099957C /* 442717_photo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 442717_photo.jpg; sourceTree = "<group>"; };
+		84B941F11AFD5DF0003DEF1F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AB5421471F9F3A4517782777 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84A18A1E1AFAA54D0032F8B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B941F21AFD5DF0003DEF1F /* SystemConfiguration.framework in Frameworks */,
+				84A18A271AFAA54D0032F8B2 /* CoreGraphics.framework in Frameworks */,
+				84A18A291AFAA54D0032F8B2 /* UIKit.framework in Frameworks */,
+				84A18A251AFAA54D0032F8B2 /* Foundation.framework in Frameworks */,
+				DF8EE16E700C8EDD870B8B67 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A18A3F1AFAA54D0032F8B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A18A441AFAA54D0032F8B2 /* XCTest.framework in Frameworks */,
+				84A18A461AFAA54D0032F8B2 /* UIKit.framework in Frameworks */,
+				84A18A451AFAA54D0032F8B2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84A18A181AFAA54D0032F8B2 = {
+			isa = PBXGroup;
+			children = (
+				84A18A2A1AFAA54D0032F8B2 /* rssReaderNews */,
+				84A18A491AFAA54D0032F8B2 /* rssReaderNewsTests */,
+				84A18A231AFAA54D0032F8B2 /* Frameworks */,
+				84A18A221AFAA54D0032F8B2 /* Products */,
+				84A18A691AFAB3E00032F8B2 /* Resourse */,
+				CE21FB28DB8D315E5F3FBBB4 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		84A18A221AFAA54D0032F8B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84A18A211AFAA54D0032F8B2 /* rssReaderNews.app */,
+				84A18A421AFAA54D0032F8B2 /* rssReaderNewsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84A18A231AFAA54D0032F8B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84B941F11AFD5DF0003DEF1F /* SystemConfiguration.framework */,
+				84A18A241AFAA54D0032F8B2 /* Foundation.framework */,
+				84A18A261AFAA54D0032F8B2 /* CoreGraphics.framework */,
+				84A18A281AFAA54D0032F8B2 /* UIKit.framework */,
+				84A18A431AFAA54D0032F8B2 /* XCTest.framework */,
+				AB5421471F9F3A4517782777 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84A18A2A1AFAA54D0032F8B2 /* rssReaderNews */ = {
+			isa = PBXGroup;
+			children = (
+				84A18A331AFAA54D0032F8B2 /* VRAppDelegate.h */,
+				84A18A341AFAA54D0032F8B2 /* VRAppDelegate.m */,
+				84A18A641AFAAF3E0032F8B2 /* Controller */,
+				84A18A621AFAAF2B0032F8B2 /* Model */,
+				84A18A601AFAAF190032F8B2 /* View */,
+				84A18A3C1AFAA54D0032F8B2 /* Images.xcassets */,
+				84A18A2B1AFAA54D0032F8B2 /* Supporting Files */,
+			);
+			path = rssReaderNews;
+			sourceTree = "<group>";
+		};
+		84A18A2B1AFAA54D0032F8B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84A18A2C1AFAA54D0032F8B2 /* rssReaderNews-Info.plist */,
+				84A18A2D1AFAA54D0032F8B2 /* InfoPlist.strings */,
+				84A18A301AFAA54D0032F8B2 /* main.m */,
+				84A18A321AFAA54D0032F8B2 /* rssReaderNews-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84A18A491AFAA54D0032F8B2 /* rssReaderNewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				84A18A4F1AFAA54D0032F8B2 /* rssReaderNewsTests.m */,
+				84A18A4A1AFAA54D0032F8B2 /* Supporting Files */,
+			);
+			path = rssReaderNewsTests;
+			sourceTree = "<group>";
+		};
+		84A18A4A1AFAA54D0032F8B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84A18A4B1AFAA54D0032F8B2 /* rssReaderNewsTests-Info.plist */,
+				84A18A4C1AFAA54D0032F8B2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84A18A5F1AFAAF010032F8B2 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				84A18A5C1AFAAEF60032F8B2 /* VRCellForFeedViewCell.h */,
+				84A18A5D1AFAAEF60032F8B2 /* VRCellForFeedViewCell.m */,
+			);
+			name = CustomCells;
+			sourceTree = "<group>";
+		};
+		84A18A601AFAAF190032F8B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84A18A5F1AFAAF010032F8B2 /* CustomCells */,
+				84A18A361AFAA54D0032F8B2 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		84A18A621AFAAF2B0032F8B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84A18A591AFAA59B0032F8B2 /* VRNetManager.h */,
+				84A18A5A1AFAA59B0032F8B2 /* VRNetManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		84A18A641AFAAF3E0032F8B2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84A18A391AFAA54D0032F8B2 /* VRMainViewController.h */,
+				84A18A3A1AFAA54D0032F8B2 /* VRMainViewController.m */,
+				84A18A6B1AFAB49B0032F8B2 /* VRDetailViewController.h */,
+				84A18A6C1AFAB49B0032F8B2 /* VRDetailViewController.m */,
+				8497AD3F1AFC142000484F8A /* VRShowNewsFromLink.h */,
+				8497AD401AFC142000484F8A /* VRShowNewsFromLink.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		84A18A691AFAB3E00032F8B2 /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+				84B941ED1AFD5D5D003DEF1F /* Reachability */,
+				84A18A6A1AFAB3EE0032F8B2 /* Images */,
+			);
+			name = Resourse;
+			path = rssReaderNews;
+			sourceTree = "<group>";
+		};
+		84A18A6A1AFAB3EE0032F8B2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				84A367881AFEB0170099957C /* 442717_photo.jpg */,
+				84A18A651AFAB3D50032F8B2 /* Placeholder.png */,
+				84A18A661AFAB3D50032F8B2 /* Placeholder@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		84B941ED1AFD5D5D003DEF1F /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				849ACC531AFE362D0025202D /* Reachability.h */,
+				849ACC541AFE362D0025202D /* Reachability.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		CE21FB28DB8D315E5F3FBBB4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				159CC61780A5BCFBDE2EB60E /* Pods.debug.xcconfig */,
+				3AED13D0F0A6F8146B79EB47 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84A18A201AFAA54D0032F8B2 /* rssReaderNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A18A531AFAA54D0032F8B2 /* Build configuration list for PBXNativeTarget "rssReaderNews" */;
+			buildPhases = (
+				52E320B822A33E4E1527A754 /* Check Pods Manifest.lock */,
+				84A18A1D1AFAA54D0032F8B2 /* Sources */,
+				84A18A1E1AFAA54D0032F8B2 /* Frameworks */,
+				84A18A1F1AFAA54D0032F8B2 /* Resources */,
+				6CD1ABDD4941168E53FF2A22 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rssReaderNews;
+			productName = rssReaderNews;
+			productReference = 84A18A211AFAA54D0032F8B2 /* rssReaderNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84A18A411AFAA54D0032F8B2 /* rssReaderNewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A18A561AFAA54D0032F8B2 /* Build configuration list for PBXNativeTarget "rssReaderNewsTests" */;
+			buildPhases = (
+				84A18A3E1AFAA54D0032F8B2 /* Sources */,
+				84A18A3F1AFAA54D0032F8B2 /* Frameworks */,
+				84A18A401AFAA54D0032F8B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84A18A481AFAA54D0032F8B2 /* PBXTargetDependency */,
+			);
+			name = rssReaderNewsTests;
+			productName = rssReaderNewsTests;
+			productReference = 84A18A421AFAA54D0032F8B2 /* rssReaderNewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84A18A191AFAA54D0032F8B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VR;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Rachenko Viacheslav";
+				TargetAttributes = {
+					84A18A411AFAA54D0032F8B2 = {
+						TestTargetID = 84A18A201AFAA54D0032F8B2;
+					};
+				};
+			};
+			buildConfigurationList = 84A18A1C1AFAA54D0032F8B2 /* Build configuration list for PBXProject "rssReaderNews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84A18A181AFAA54D0032F8B2;
+			productRefGroup = 84A18A221AFAA54D0032F8B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84A18A201AFAA54D0032F8B2 /* rssReaderNews */,
+				84A18A411AFAA54D0032F8B2 /* rssReaderNewsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84A18A1F1AFAA54D0032F8B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A18A681AFAB3D50032F8B2 /* Placeholder@2x.png in Resources */,
+				84A18A3D1AFAA54D0032F8B2 /* Images.xcassets in Resources */,
+				84A18A671AFAB3D50032F8B2 /* Placeholder.png in Resources */,
+				84A367891AFEB0170099957C /* 442717_photo.jpg in Resources */,
+				84A18A2F1AFAA54D0032F8B2 /* InfoPlist.strings in Resources */,
+				84A18A381AFAA54D0032F8B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A18A401AFAA54D0032F8B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A18A4E1AFAA54D0032F8B2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52E320B822A33E4E1527A754 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6CD1ABDD4941168E53FF2A22 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84A18A1D1AFAA54D0032F8B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A18A3B1AFAA54D0032F8B2 /* VRMainViewController.m in Sources */,
+				84A18A6D1AFAB49B0032F8B2 /* VRDetailViewController.m in Sources */,
+				84A18A351AFAA54D0032F8B2 /* VRAppDelegate.m in Sources */,
+				84A18A311AFAA54D0032F8B2 /* main.m in Sources */,
+				84A18A5B1AFAA59B0032F8B2 /* VRNetManager.m in Sources */,
+				84A18A5E1AFAAEF60032F8B2 /* VRCellForFeedViewCell.m in Sources */,
+				849ACC551AFE362D0025202D /* Reachability.m in Sources */,
+				8497AD411AFC142000484F8A /* VRShowNewsFromLink.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A18A3E1AFAA54D0032F8B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A18A501AFAA54D0032F8B2 /* rssReaderNewsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84A18A481AFAA54D0032F8B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84A18A201AFAA54D0032F8B2 /* rssReaderNews */;
+			targetProxy = 84A18A471AFAA54D0032F8B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84A18A2D1AFAA54D0032F8B2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A18A2E1AFAA54D0032F8B2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84A18A361AFAA54D0032F8B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A18A371AFAA54D0032F8B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84A18A4C1AFAA54D0032F8B2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A18A4D1AFAA54D0032F8B2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84A18A511AFAA54D0032F8B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84A18A521AFAA54D0032F8B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84A18A541AFAA54D0032F8B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 159CC61780A5BCFBDE2EB60E /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "rssReaderNews/rssReaderNews-Prefix.pch";
+				INFOPLIST_FILE = "rssReaderNews/rssReaderNews-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84A18A551AFAA54D0032F8B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AED13D0F0A6F8146B79EB47 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "rssReaderNews/rssReaderNews-Prefix.pch";
+				INFOPLIST_FILE = "rssReaderNews/rssReaderNews-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		84A18A571AFAA54D0032F8B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/rssReaderNews.app/rssReaderNews";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "rssReaderNews/rssReaderNews-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "rssReaderNewsTests/rssReaderNewsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		84A18A581AFAA54D0032F8B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/rssReaderNews.app/rssReaderNews";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "rssReaderNews/rssReaderNews-Prefix.pch";
+				INFOPLIST_FILE = "rssReaderNewsTests/rssReaderNewsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84A18A1C1AFAA54D0032F8B2 /* Build configuration list for PBXProject "rssReaderNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A18A511AFAA54D0032F8B2 /* Debug */,
+				84A18A521AFAA54D0032F8B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A18A531AFAA54D0032F8B2 /* Build configuration list for PBXNativeTarget "rssReaderNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A18A541AFAA54D0032F8B2 /* Debug */,
+				84A18A551AFAA54D0032F8B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A18A561AFAA54D0032F8B2 /* Build configuration list for PBXNativeTarget "rssReaderNewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A18A571AFAA54D0032F8B2 /* Debug */,
+				84A18A581AFAA54D0032F8B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84A18A191AFAA54D0032F8B2 /* Project object */;
+}
